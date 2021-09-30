@@ -1,0 +1,77 @@
+program: function+                                                 
+
+function:   T_INT NAME "(" func_args ")" stmtblock                  
+func_args:  [func_arg ("," func_arg)*]     // function arguments can be empty 
+func_arg:   T_INT NAME
+
+stmtblock:  "{" statement* "}" 
+
+?statement: NAME "=" expr ";"                   -> assignstmt 
+            | T_INT NAME ";"                    -> var_declar
+            | expr ";"                          -> expr_stmt
+            | ifstmt 
+            | whilestmt 
+            | "print" "(" print_arg ")" ";"     -> printstmt
+            | "return" expr ";"                 -> returnstmt 
+            | "break" ";"                       -> breakstmt 
+            | "continue" ";"                    -> continuestmt                      
+
+?print_arg: STRING | NAME 
+
+ifstmt:     "if" "(" expr ")" stmtblock
+            | "if" "(" expr ")" stmtblock "else" stmtblock  
+whilestmt:  "while" "(" expr ")" stmtblock
+
+// above: blocks, top-down 
+// below: expr, bottom-up
+
+?expr:      expr "|" and_expr                   -> op_or
+            | and_expr
+
+?and_expr:  and_expr "&" eq_expr                -> op_and
+            | eq_expr
+
+?eq_expr:   eq_expr "==" neq_expr               -> cmp_eq
+            | eq_expr "!=" neq_expr             -> cmp_ne
+            | neq_expr 
+
+?neq_expr:  neq_expr "<" arith_expr             -> cmp_lt
+            | neq_expr ">" arith_expr           -> cmp_gt
+            | neq_expr ">=" arith_expr          -> cmp_ge
+            | neq_expr "<=" arith_expr          -> cmp_le
+            | arith_expr
+
+?arith_expr:arith_expr "-" term                 -> op_sub 
+            | arith_expr "+" term               -> op_add 
+            | term 
+
+?term:      term "%" factor                     -> op_mod 
+            | term "*" factor                   -> op_mul 
+            | term "/" factor                   -> op_div 
+            | factor 
+
+?factor:    "~" factor                          -> op_not 
+            | "-" factor                        -> op_neg 
+            | atom_expr                         // function call, integer, variable, ... 
+
+?atom_expr: NAME "("  [expr ("," expr)*]  ")"   -> callexpr
+            | atom 
+
+?atom:      "(" expr ")" 
+            | INTEGER                           -> push_immd
+            | NAME                              -> push_var
+
+
+
+
+T_INT: "int"                   // string has higher priority then regex
+NAME: /[_a-zA-Z][_a-zA-Z0-9]*/
+INTEGER: /\d+/ | /0x[\da-f]+/i | /0b[01]+/i
+STRING: /".*?(?<!\\)"/
+
+
+%ignore /[ \t\n\f\r]+/         // white space
+%ignore /\/\/[^\n]*/           // inline comment 
+%ignore /#[^\n]*/              // macro
+
+

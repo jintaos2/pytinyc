@@ -1,0 +1,154 @@
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '10')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'cmp_lt')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jz'), Token('TAG', 36)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '1')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'op_add')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '3')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'cmp_eq')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '5')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'cmp_eq')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'op_or')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jz'), Token('TAG', 22)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 4)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 22)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '8')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'cmp_eq')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jz'), Token('TAG', 28)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 36)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 28)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@pc')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@ebp')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('stack', [Token('NAME', 'savesize')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 41)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('ARG', 1)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('printstmt', [Token('ARG', 1)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 4)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '2')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'cmp_lt')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jz'), Token('TAG', 52)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '1')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 52)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('printstmt', [Token('STRING', '"ccc"')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '1')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'op_sub')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@pc')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@ebp')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('stack', [Token('NAME', 'savesize')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 41)]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'pop')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'op_mul')]) 
+2021/08/06 16:32:09 (pcode.py:271) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
+2021/08/06 17:13:43 (pcode.py:185) start! 
+2021/08/06 17:13:43 (pcode.py:212) pc=0    ebp=2    addr=0    line:     push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=1    ebp=2    addr=0    line:     push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=2    ebp=2    addr=0    line:4    push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=3    ebp=2    addr=0    line:5    pop       0          
+2021/08/06 17:13:43 (pcode.py:212) pc=4    ebp=2    addr=0    line:7    push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=5    ebp=2    addr=0    line:8    push      10         
+2021/08/06 17:13:43 (pcode.py:212) pc=6    ebp=2    addr=0    line:9    cmp_lt     
+2021/08/06 17:13:43 (pcode.py:212) pc=7    ebp=2    addr=0    line:10   jz        _endloop_0 
+2021/08/06 17:13:43 (pcode.py:212) pc=8    ebp=2    addr=0    line:11   push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=9    ebp=2    addr=0    line:12   push      1          
+2021/08/06 17:13:43 (pcode.py:212) pc=10   ebp=2    addr=0    line:13   op_add     
+2021/08/06 17:13:43 (pcode.py:212) pc=11   ebp=2    addr=0    line:14   pop       0          
+2021/08/06 17:13:43 (pcode.py:212) pc=12   ebp=2    addr=0    line:16   push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=13   ebp=2    addr=0    line:17   push      3          
+2021/08/06 17:13:43 (pcode.py:212) pc=14   ebp=2    addr=0    line:18   cmp_eq     
+2021/08/06 17:13:43 (pcode.py:212) pc=15   ebp=2    addr=0    line:19   push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=16   ebp=2    addr=0    line:20   push      5          
+2021/08/06 17:13:43 (pcode.py:212) pc=17   ebp=2    addr=0    line:21   cmp_eq     
+2021/08/06 17:13:43 (pcode.py:212) pc=18   ebp=2    addr=0    line:22   op_or      
+2021/08/06 17:13:43 (pcode.py:212) pc=19   ebp=2    addr=0    line:23   jz        _else_1    
+2021/08/06 17:13:43 (pcode.py:212) pc=22   ebp=2    addr=0    line:29   push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=23   ebp=2    addr=0    line:30   push      8          
+2021/08/06 17:13:43 (pcode.py:212) pc=24   ebp=2    addr=0    line:31   cmp_eq     
+2021/08/06 17:13:43 (pcode.py:212) pc=25   ebp=2    addr=0    line:32   jz        _else_2    
+2021/08/06 17:13:43 (pcode.py:212) pc=28   ebp=2    addr=0    line:37   push      0          
+2021/08/06 17:13:43 (pcode.py:212) pc=29   ebp=2    addr=0    line:     push      @pc        
+2021/08/06 17:13:43 (pcode.py:212) pc=30   ebp=2    addr=0    line:     push      @ebp       
+2021/08/06 17:13:43 (pcode.py:212) pc=31   ebp=2    addr=0    line:     savesize   
+2021/08/06 17:13:43 (pcode.py:212) pc=32   ebp=7    addr=0    line:     jmp       factor     
+2021/08/06 17:13:43 (pcode.py:223) invalid opcode: op_jmp 
+2021/08/06 17:13:43 (pcode.py:188) finish! 
+2021/08/06 17:13:43 (pcode.py:287) [-1, 0, 1, 0, 1, 30, 2] 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '2')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('ARG', 1)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '3')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('ARG', 0)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 1)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', 0)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@pc')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@ebp')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('stack', [Token('NAME', 'savesize')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 45)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('ARG', 0)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('printstmt', [Token('ARG', 0)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '0')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '2')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'cmp_lt')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('jmpstmt', [Token('NAME', 'jz'), Token('TAG', 30)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '1')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 30)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('printstmt', [Token('STRING', '"ccc"')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('INTEGER', '1')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'op_sub')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@pc')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('REG', '@ebp')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('stack', [Token('NAME', 'savesize')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('jmpstmt', [Token('NAME', 'jmp'), Token('TAG', 19)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'op_mul')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -4)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'push'), Token('ARG', -3)]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('stack', [Token('NAME', 'resize')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@ebp')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop'), Token('REG', '@addr')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'pop')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'op_add')]) 
+2021/08/06 21:10:45 (pcode.py:250) Tree('opstmt', [Token('NAME', 'jmp'), Token('REG', '@addr')]) 
